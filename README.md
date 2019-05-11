@@ -9,10 +9,13 @@
   2.2- import { createStore } from 'redux'
   2.3- import reducer from './store/reducer.js'
 
-3- The store has to be create in index.js, as well and passed as paramenter for Provider
+3- The store has to be create in index.js, and passed as paramenter for Provider, which wrappers the app, allowing to use store in the entiry application.
 
 4- In order to create store, it should receive reducer, according line 10
 
 5- The reducer has an initialState and it performs the changes according the actions and values received.
 p.s. value in optional, but if not received, the action has to define its value to execute some calculus
 
+6- In the App.js, create the methods to map dispatch to props
+
+7- Also, `import { connect } from 'react-redux'`
