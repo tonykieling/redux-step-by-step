@@ -3,25 +3,6 @@ import './App.css';
 import { connect } from 'react-redux';
 
 class App extends Component {
-  // state = {
-  //   number:10
-  // }
-
-  // increase = () => {
-  //   console.log("add")
-  //   this.setState({
-  //     number: this.state.number + 1
-  //   })
-  // }
-
-  // decrease = () => {
-  //   console.log("sub")
-  //   this.setState({
-  //     number: this.state.number - 1
-  //   })
-  // }
-  
-  
   render() {
     return (
       <div className="App">
@@ -36,7 +17,6 @@ class App extends Component {
   }
 }
 
-// export default App;
 
 const mapStateToProps = (state) => {
   return {
