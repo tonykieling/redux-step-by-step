@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import { connect } from 'react-redux';
+import Buttons from './Buttons.js'
+import Counter from './Counter.js'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
       <div> <br /> <br />
-      Number: <span> { this.props.number } </span> <br /> <br />
-        <button onClick={this.props.increase}>Increase</button>
-        <button onClick={this.props.decrease}>Decrease</button>
+        <Counter />
+        <Buttons />        
       </div>
         
       </div>
@@ -18,17 +18,5 @@ class App extends Component {
 }
 
 
-const mapStateToProps = (state) => {
-  return {
-    number: state.number
-  }
-}
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    increase: () => dispatch({type:"INCREASE"}),
-    decrease: () => dispatch({type:"DECREASE"})
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default (App);

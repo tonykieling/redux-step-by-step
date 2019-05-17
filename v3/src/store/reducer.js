@@ -10,6 +10,8 @@ const reducer = (state = initialState, action) => {
     newState.number += 1;
   if (action.type === "DECREASE")
     newState.number -= 1;
+  if (action.type === "RESET")
+    newState.number = 0;
 
   return newState
 }
