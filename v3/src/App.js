@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Buttons from './Buttons.js'
 import Counter from './Counter.js'
+import ColorStatus from './ColorStatus.js'
 
 class App extends Component {
   render() {
@@ -9,7 +10,8 @@ class App extends Component {
       <div className="App">
       <div> <br /> <br />
         <Counter />
-        <Buttons />        
+        <Buttons />
+        <ColorStatus />
       </div>
         
       </div>
