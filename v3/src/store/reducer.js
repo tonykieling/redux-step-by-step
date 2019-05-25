@@ -8,13 +8,13 @@
 
 // const reducer = (state = initialState, action) => {
 const reducer = (state, action) => {
-  console.log("state:: ", state)
+  // console.log("state:: ", state)
   if (!state)
     state = {
       number:0,
       type: "zero"
     }
-  console.log("state:: ", state)
+  // console.log("state:: ", state)
   const newState = {...state};
   if (action.type === "INCREASE")
     newState.number += 1;

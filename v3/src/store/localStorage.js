@@ -2,7 +2,7 @@
 
 export const getState = () => {
   try {
-    const serializedState = localStorage.getItem('status')
+    const serializedState = localStorage.getItem('state')
     if (!serializedState)
       return undefined
     return JSON.parse(serializedState)
@@ -12,6 +12,7 @@ export const getState = () => {
 }
 
 export const saveState = state => {
+console.log("XYZstate:: ", state)  
   try {
     const serializedState = JSON.stringify(state)
     localStorage.setItem('state', serializedState)

@@ -14,15 +14,20 @@ console.log("persistedData: ", persistedData)
 
 const store = createStore(
   reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  persistedData
-  
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  persistedData  
 );
 
 
 store.subscribe(() => {
-  console.log(`subscribed
-  store.getState = ${JSON.stringify(store.getState())}`)
+  console.log(`BEFORE:
+  store.getState = ${JSON.stringify(store.getState())}
+  getState = ${getState()}`)
+  // saveState(store.getState())
+  // saveState('number', store.get)
+  console.log(`after:
+  store.getState = ${JSON.stringify(store.getState().number)}
+  getState = ${getState()}`)
 })
 
 ReactDOM.render(
