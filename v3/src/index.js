@@ -23,6 +23,7 @@ const store = createStore(
 store.subscribe(() => {
   const value = JSON.stringify(store.getState())
   saveState({'state': value} )
+  console.log(`changing state: ${JSON.stringify(getState())}`)
 })
 
 ReactDOM.render(

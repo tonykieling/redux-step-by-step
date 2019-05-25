@@ -38,6 +38,7 @@ p.s. value in optional, but if not received, the action has to define its value 
 after clone/download the repo,  
 - run `npm i` in order to install all necessary pachages,  
 - run `npm start` to fire the server,  
-- open the browser on `http://0.0.0.0:3000`
+- open the browser on `http://0.0.0.0:3000`  
+  
 ***p.s.***  
 open the browser console to check the states, regarding the above section (about localStorage)

@@ -4,16 +4,7 @@ const initialState = {
   type: "zero"
 }
 
-// console.log("BEfore-initialState:: ", initialState)
-
 const reducer = (state = initialState, action) => {
-  // console.log("after-state:: ", state)
-// const reducer = (state, action) => {
-//   if (!state)
-//     state = {
-//       number:0,
-//       type: "zero"
-//     }
   const newState = {...state};
   if (action.type === "INCREASE")
     newState.number += 1;
