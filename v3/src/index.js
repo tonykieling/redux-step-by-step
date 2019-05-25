@@ -24,7 +24,8 @@ store.subscribe(() => {
   store.getState = ${JSON.stringify(store.getState())}
   getState = ${getState()}`)
   // saveState(store.getState())
-  // saveState('number', store.get)
+  const value = JSON.stringify(store.getState())
+  saveState({'state': value} )
   console.log(`after:
   store.getState = ${JSON.stringify(store.getState().number)}
   getState = ${getState()}`)
