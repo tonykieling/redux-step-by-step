@@ -19,3 +19,12 @@ p.s. value in optional, but if not received, the action has to define its value 
 6- In the App.js, create the methods to map dispatch to props (mapDispatchToProps) and map state to props (mapStateToProps) - outiside the component, as two separeted functions.  
 
 7- Also, `import { connect } from 'react-redux'` due to connect the functions above with the App.  
+
+
+### localStorage
+- run `localStorage` on the browser to check all the current content at localStorage  
+- run `localStorage.clear()` to clean all current content at localStorage  
+- run `localStorage.setItem('nameOfKey', 'itsValue')` will record a key/value
+- run `localStorage.getItem('nameOfKey)` will get the value searching by its key
+- run `localStorage.removeItem('nameOfKey')` in order to remove an item by its key
+
