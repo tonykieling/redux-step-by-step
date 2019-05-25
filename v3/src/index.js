@@ -14,6 +14,11 @@ const store = createStore(
   
 );
 
+store.subscribe(() => {
+  console.log(`subscribed
+  store.getState = ${JSON.stringify(store.getState())}`)
+})
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

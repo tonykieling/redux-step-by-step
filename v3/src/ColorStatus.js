@@ -8,8 +8,8 @@ class ColorStatus extends Component {
     const even = {"color": "blue"}
     const odd = {"color": "red"}
     let v = zero
-console.log("this.props:: ", this.props)
-console.log("zero:: ", zero)
+// console.log("this.props:: ", this.props)
+// console.log("zero:: ", zero)
     return (
       <div style = {v}>
         {/* {this.props.number % 2 === 0 ?
