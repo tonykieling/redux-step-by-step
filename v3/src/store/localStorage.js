@@ -1,4 +1,4 @@
-// this module allows persist the data in localStorage
+// this module allows persist the data in localStorage and keep the data among different browser tabs, and after the user rebooting the system, as well
 
 export const getState = () => {
   try {
@@ -12,7 +12,6 @@ export const getState = () => {
 }
 
 export const saveState = ({ state }) => {
-// console.log("XYZstate:: ", state) 
   try {
     localStorage.setItem('state', state)
   } catch (err) {

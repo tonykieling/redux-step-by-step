@@ -17,7 +17,7 @@ class Buttons extends Component {
 }
 
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     increase: () => dispatch({type:"INCREASE"}),
     increase10: () => dispatch({type:"INCREASE10"}),

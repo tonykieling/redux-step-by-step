@@ -4,15 +4,12 @@ import { connect } from 'react-redux';
 
 class ColorStatus extends Component {
   render() {
-    // const zero = {"color": "black"}
-    // const even = {"color": "blue"}
-    // const odd = {"color": "red"}
     let v = {color: "grey"}
     if (this.props.type === "zero")
       v.color = "grey"
-    if (this.props.type === "even")
+    else if (this.props.type === "even")
       v.color = "blue"
-    if (this.props.type === "odd")
+    else if (this.props.type === "odd")
       v.color = "red"
 
     return (
@@ -27,7 +24,7 @@ class ColorStatus extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     number: state.number,
     type: state.type
