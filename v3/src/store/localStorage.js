@@ -12,12 +12,9 @@ export const getState = () => {
 }
 
 export const saveState = ({ state }) => {
-console.log("XYZstate:: ", state) 
+// console.log("XYZstate:: ", state) 
   try {
-    // const serializedState = JSON.stringify(state)
-    // console.log("before- ", JSON.stringify(localStorage.getItem('state')))
     localStorage.setItem('state', state)
-    // console.log("after- ", JSON.stringify(localStorage.getItem('state')))
   } catch (err) {
     return err.message
   }
