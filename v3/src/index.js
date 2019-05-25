@@ -7,12 +7,18 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducer from './store/reducer.js'
+import { getState, saveState } from './store/localStorage.js'
+
+const persistedData = getState()
+console.log("persistedData: ", persistedData)
 
 const store = createStore(
   reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  persistedData
   
 );
+
 
 store.subscribe(() => {
   console.log(`subscribed
