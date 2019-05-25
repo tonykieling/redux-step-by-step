@@ -1,5 +1,5 @@
 ## What is this?
-"redux-step-by-step" project is a simple React application which performs some actions in order to Increase (1 or 10), Decrease (1 or 10) and Reset a Counter component and shows its type (Zero, Even or Odd).  
+"redux-step-by-step v3" project is a simple React application which performs some actions in order to Increase (1 or 10), Decrease (1 or 10) and Reset a Counter component and shows its type (Zero, Even or Odd).  
 It keeps state because I am using localStorage to storage the state on the browser, which allows to access that state in another tab browser or even after the user reboots the system.  
 Behind the scenes the sates are being managed by a redux store, as well.  
 The main goal here is practice and doc the tasks envolved to create the situation above.   
@@ -39,5 +39,5 @@ after clone/download the repo,
 - run `npm i` in order to install all necessary pachages,  
 - run `npm start` to fire the server,  
 - open the browser on `http://0.0.0.0:3000`
-***p.s.***
+***p.s.***  
 open the browser console to check the states, regarding the above section (about localStorage)
