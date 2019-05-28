@@ -14,3 +14,5 @@ https://egghead.io/lessons/javascript-redux-persisting-the-state-to-the-local-st
 https://www.taniarascia.com/how-to-use-local-storage-with-javascript/  
 https://www.youtube.com/watch?v=0ix_QLPkYhI  
 https://medium.freecodecamp.org/understanding-redux-the-worlds-easiest-guide-to-beginning-redux-c695f45546f6  
+https://www.youtube.com/watch?v=l_Yp8_SuGgU&list=PLShDm2AZYnK3ygqvx2ClUnCrCEm2j3EKX&index=3
+
