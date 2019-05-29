@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
     newState.number -= 10;
   if (action.type === "RESET")
     newState.number = 0;
-
+// console.log("-----------------------------------")
   (newState.number === 0) ?
     (newState.type = "zero") :
     ((newState.number % 2 === 0) ?
