@@ -6,6 +6,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   const newState = {...state};
+  console.log(`action: ${JSON.stringify(action)}`)
   if (action.type === "INCREASE")
     newState.number += 1;
   if (action.type === "INCREASE10")

@@ -12,9 +12,9 @@ class Counter extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = store => {
   return {
-    number: state.number
+    number: store.number
   }
 }
 
