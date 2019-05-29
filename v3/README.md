@@ -42,3 +42,9 @@ after clone/download the repo,
   
 ***p.s.***  
 open the browser console to check the states, regarding the above section (about localStorage)
+
+passing data Redux/React  
+https://www.youtube.com/watch?v=wa1NaL_WWpI  
+
+getState() or dispatch()  
+https://stackoverflow.com/questions/52074622/store-getstate-or-mapstatetoprops-in-component
