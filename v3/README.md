@@ -10,17 +10,18 @@ The main goal here is practice and doc the tasks envolved to create the situatio
   1.1- npm i react-redux  
   1.2- npm i redux  
 
-2- In order to have redux globally, in the hights structure in our React project (index.js), we have to:  
+2- In order to have redux globally, in the highest structure in our React project (index.js), we have to:  
   2.1- import { Provider } from 'react-redux'  
-  2.2- import { createStore } from 'redux'  
-  2.3- import reducer from './store/reducer.js'  
 
-3- The store has to be create in index.js, and passed as paramenter for Provider, which wrappers the app, allowing to use store in the entiry application.  
+3- The store can be create in index.js, and passed as paramenter for Provider, which wrappers the app, allowing to use store in the entire application.  
+  3.1- import { createStore } from 'redux'  
+  3.2- import reducer from './store/reducer.js'  
+ *p.s. it also be created in a different file*
 
-4- In order to create store, it should receive reducer, according line 10  
+4- In order to create store, it should receive reducer  
 
 5- The reducer has an initialState and it performs the changes according the actions and values received.  
-p.s. value in optional, but if not received, the action has to define its value to execute some calculus  
+*p.s. value in optional, but if not received, the action has to define its value to execute some calculus  *
 
 6- In the App.js, create the methods to map dispatch to props (mapDispatchToProps) and map state to props (mapStateToProps) - outiside the component, as two separeted functions.  
 
